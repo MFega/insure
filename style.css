@@ -1,0 +1,697 @@
+/* ## Primary
+
+- Dark Violet: hsl(256, 26%, 20%)
+- Grayish Blue: hsl(216, 30%, 68%)
+
+### Neutral
+
+- Very Dark Violet: hsl(270, 9%, 17%)
+- Dark Grayish Violet: hsl(273, 4%, 51%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: white;
+    padding: 30px;
+    
+}
+
+.nav-bar{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: hsl(270, 9%, 17%);
+    left: 0;
+    top: 10%;
+    display: none;
+    z-index: 111111;
+ }
+
+.nav-bar ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar button{
+    background: transparent;
+    color: white;
+    width: 100%;
+    margin-top:25px ;
+    padding: 15px 0;
+    border-color:white ;
+}
+
+.nav-bar img{
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn,label #cancel{
+    position: absolute;
+    top: 20px;
+    left: 80%;
+}
+
+label #cancel{
+    display: none;
+}
+
+#check:checked ~ label #btn{
+    display: none;
+}
+
+#check:checked ~ label #cancel{
+    display: block;
+}
+
+#check:checked ~ .nav-bar{
+    display: block;
+}
+
+.button{
+    display: none;
+    background: transparent;
+    color: white;
+    margin-top:25px ;
+    padding: 15px 0;
+    border-color:white ;
+}
+
+/* ***********HUMANIZING*********** */
+ 
+.human-img{
+    background: url("./insure-landing-page-master/images/image-intro-mobile.jpg") center/cover no-repeat;
+    height: 450px;
+    width: 100%;
+}
+
+.human img{
+    position: absolute;
+}
+
+.human-item{
+    background: hsl(270, 9%, 17%);
+    color: white;
+    padding: 30px;
+    position: relative;
+    height: 500px;
+   
+}
+
+.content{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.content h1{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content p{
+    padding: 15px 0 30px;
+    line-height: 25px;
+}
+
+.content button{
+    background: transparent;
+    padding: 10px 20px;
+    border-color: white;
+    color: white;
+}
+
+.left-1{
+    top: 0;
+    left: 0;
+}
+
+.left-2{
+    display: none;
+}
+
+.right-1{
+    right: 0;
+    top:60% ;
+}
+
+.right-2{
+    display: none;
+}
+
+
+/* ***********DIFFERENT*********** */
+.different{
+    text-align: center;
+    margin: 170px 30px 30px;
+    position: relative;
+}
+
+.different::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: hsl(216, 30%, 68%);
+    top: -40px;
+    left: 38%;
+}
+
+.title{
+    margin: 20px 0 50px;
+    color: hsl(270, 9%, 17%);
+}
+
+.items{
+    margin-bottom: 50px;
+}
+
+.items h2{
+    margin: 20px 0;
+    color: hsl(270, 9%, 17%);
+}
+
+.items p{
+    color: hsl(216, 30%, 68%);
+    line-height: 25px;
+}
+
+
+/* *************HOW WE WORK********* */
+.how{
+    margin: 100px 30px 100px;
+    background:hsl(270, 9%, 17%);
+    height: 380px;
+    padding: 30px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.how-img-1{
+     position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.how-img-2{
+    display: none;
+}
+
+.how h1{
+    margin-top: 70px;
+}
+
+.how button{
+    background: transparent;
+    border-color: white;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ***********FOOTER********** */
+.footer{
+    background: hsl(0, 0%, 98%);
+    position: relative;
+    padding:120px 30px 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer-img-1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+}
+
+.footer-img-2{
+    display: none;
+}
+
+.footer-1{
+border-bottom: 1px solid hsl(216, 30%, 68%);
+padding-bottom: 30px;
+
+}
+
+.logo-2{
+    margin-bottom: 15px;
+}
+
+.icons img{
+    padding-right: 15px;
+}
+
+.footer-links{
+    margin-top: 40px;
+}
+
+.footer-2{
+    margin-bottom: 30px;
+}
+
+.footer-2 ul li{
+list-style-type: none;
+padding-bottom: 20px;
+}
+
+.footer-2 ul li a{
+    text-decoration: none;
+    color: hsl(270, 9%, 17%);
+}
+
+.title-2{
+    color: hsl(216, 30%, 68%);
+    margin-bottom: 40px;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1289px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .nav-bar{
+        height: initial;
+        width: initial;
+        position: initial;
+        background: none;
+        display: block;
+        z-index: 111111;
+         
+     }
+    
+    .nav-bar ul{
+        text-align: initial;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: none;
+        
+    }
+    
+    .nav-bar ul li{
+        list-style-type: none;
+        padding-top: none;
+        padding-left: 25px;
+
+    }
+    
+    .nav-bar ul li a{
+        text-decoration: none;
+        color: hsl(270, 9%, 17%);
+        font-size: 16px;
+    }
+
+    .nav-bar ul li a:nth-child(1){
+        width: 100%;
+    }
+    
+    .nav-bar button{
+        display: none;
+    }
+
+    .button{
+        background: transparent;
+        color: hsl(270, 9%, 17%);
+        margin-top:none ;
+        border-color:hsl(270, 9%, 17%);
+        display: block;
+        padding: 15px 20px;
+    }
+    
+    .nav-bar img{
+        display: none;
+    }
+    
+    label #btn,label #cancel{
+       display: none;
+    }
+    
+    
+    /* **************HUMANIZING************ */
+    .human-img{
+        background: url("./insure-landing-page-master/images/image-intro-desktop.jpg") center/cover no-repeat;
+        height: 450px;
+        width: 100%;
+        display: none;
+    }
+    
+    .human img{
+        position: absolute;
+    }
+    
+    .human-item{
+        background: hsl(270, 9%, 17%);
+        color: white;
+        padding: 30px;
+        position: relative;
+        height: 500px;
+       overflow: hidden;
+    }
+    .left-1{
+        display: none;
+    }
+    
+    .left-2{
+        top: 50%;
+        left: -5%;
+        display: block;
+        transform: scale(.7);
+    }
+    
+    .right-1{
+        display: none;
+    }
+    
+    .right-2{
+        display: block;
+        right: -7%;
+        top:-20%;
+        transform: scale(.7);
+    }
+
+    .content{
+        text-align: left;
+        margin-top: 90px;
+        width: 50%;
+    }
+    
+    .content h1{
+        width: 50%;
+        margin: initial;
+    }
+    
+
+    /* ***************DIFFERENT **********************/
+    .different{
+        text-align: left;
+        margin: 170px 30px 30px;
+        position: relative;
+    }
+
+    .different::before{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background: hsl(216, 30%, 68%);
+        top: -40px;
+        left: 0;
+    }
+
+    .different-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 24px;
+    }
+
+    /* ***********HOW WE WORK********** */
+    .how{
+        margin: 100px 30px 100px;
+        height: 250px;
+        padding: 30px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .how-img-1{
+       display: none;
+   }
+
+   .how-img-2{
+    position: absolute;
+   top: 0;
+   right: 0;
+   display: block;
+   height: 100%;
+}
+
+.how h1{
+    width: 30%;
+}
+
+.how button{
+    margin-top: 75px;
+    height: 50px;
+}   
+
+    /* ************HOW************ */
+    .footer{
+        text-align: left;
+    }
+    .footer-1{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-img-1{
+        display: none;
+    }
+
+    .footer-img-2{
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        
+    }
+}
+
+@media screen and (min-width:1289px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .nav-bar{
+        height: initial;
+        width: initial;
+        position: initial;
+        background: none;
+        display: block;
+        z-index: 111111;
+     }
+    
+    .nav-bar ul{
+        text-align: initial;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: none;
+        margin-right: -40%;
+    }
+    
+    .nav-bar ul li{
+        list-style-type: none;
+        padding-top: none;
+        padding-left: 20px;
+    }
+    
+    .nav-bar ul li a{
+        text-decoration: none;
+        color: hsl(270, 9%, 17%);
+        font-size: 16px;
+    }
+
+    .nav-bar ul li a:nth-child(1){
+        width: 100%;
+    }
+    
+    .nav-bar button{
+        display: none;
+    }
+
+    .button{
+        background: transparent;
+        color: hsl(270, 9%, 17%);
+        margin-top:none ;
+        border-color:hsl(270, 9%, 17%);
+        display: block;
+        padding: 15px 20px;
+    }
+    
+    .nav-bar img{
+        display: none;
+    }
+    
+    label #btn,label #cancel{
+       display: none;
+    }
+    
+    
+    /* **************HUMANIZING************ */
+    .human-img{
+        background: url("./insure-landing-page-master/images/image-intro-desktop.jpg") center/cover no-repeat;
+        height: 450px;
+        width: 100%;
+        display: none;
+    }
+    
+    .human img{
+        position: absolute;
+    }
+    
+    .human-item{
+        background: hsl(270, 9%, 17%);
+        color: white;
+        padding: 30px;
+        position: relative;
+        height: 500px;
+       overflow: hidden;
+    }
+    .left-1{
+        display: none;
+    }
+    
+    .left-2{
+        top: 50%;
+        left: -5%;
+        display: block;
+        transform: scale(.7);
+    }
+    
+    .right-1{
+        display: none;
+    }
+    
+    .right-2{
+        display: block;
+        right: -7%;
+        top:-20%;
+        transform: scale(.7);
+    }
+
+    .content{
+        text-align: left;
+        margin-top: 90px;
+        width: 50%;
+    }
+    
+    .content h1{
+        width: 50%;
+        margin: initial;
+    }
+    
+
+    /* ***************DIFFERENT **********************/
+    .different{
+        text-align: left;
+        margin: 170px 30px 30px;
+        position: relative;
+    }
+
+    .different::before{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 2px;
+        background: hsl(216, 30%, 68%);
+        top: -40px;
+        left: 0;
+    }
+
+    .different-items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 24px;
+    }
+
+    /* ***********HOW WE WORK********** */
+    .how{
+        margin: 100px 30px 100px;
+        height: 250px;
+        padding: 30px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .how-img-1{
+       display: none;
+   }
+
+   .how-img-2{
+    position: absolute;
+   top: 0;
+   right: 0;
+   display: block;
+   height: 100%;
+}
+
+.how h1{
+    width: 30%;
+}
+
+.how button{
+    margin-top: 75px;
+    height: 50px;
+}   
+
+    /* ************HOW************ */
+    .footer{
+        text-align: left;
+    }
+    .footer-1{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-img-1{
+        display: none;
+    }
+
+    .footer-img-2{
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        
+    }
+}
+

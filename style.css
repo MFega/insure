@@ -134,7 +134,7 @@ label #cancel{
 }
 
 .human-item{
-    background: hsl(270, 9%, 17%);
+    background: hsl(256, 26%, 20%);
     color: white;
     padding: 30px;
     position: relative;
@@ -151,6 +151,7 @@ label #cancel{
     width: 50%;
     margin: 0 auto;
     font-family: 'DM Serif Display', serif;
+    font-size: 27px;
 }
 
 .content p{
@@ -214,6 +215,7 @@ label #cancel{
     margin: 20px 0 50px;
     color: hsl(270, 9%, 17%);
     font-family: 'DM Serif Display', serif;
+    font-size: 27px;
 }
 
 .items{
@@ -236,7 +238,7 @@ label #cancel{
 /* *************HOW WE WORK********* */
 .how{
     margin: 100px 30px 100px;
-    background:hsl(270, 9%, 17%);
+    background: hsl(256, 26%, 20%);
     height: 380px;
     padding: 30px;
     position: relative;
@@ -257,6 +259,7 @@ label #cancel{
 .how h1{
     margin-top: 70px;
     font-family: 'DM Serif Display', serif;
+    font-size: 27px;
 }
 
 .how button{
@@ -349,6 +352,7 @@ padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        padding: 0 30px;
     }
 
     .nav-bar{
@@ -440,9 +444,7 @@ padding-bottom: 20px;
     }
     
     .human-item{
-        background: hsl(270, 9%, 17%);
-        color: white;
-        padding: 30px;
+        
         position: relative;
         height: 500px;
        overflow: hidden;
@@ -588,7 +590,7 @@ padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding:30px 70px;
+        padding:0 70px;
     }
 
     .nav-bar{
@@ -674,8 +676,7 @@ padding-bottom: 20px;
     }
     
     .human-item{
-        background: hsl(270, 9%, 17%);
-        color: white;
+       
         padding: 70px;
         position: relative;
         height: 500px;

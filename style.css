@@ -351,8 +351,8 @@ padding-bottom: 20px;
     .header{
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        padding: 0 30px;
+        align-items: center;
+        padding:  30px;
     }
 
     .nav-bar{
@@ -362,7 +362,7 @@ padding-bottom: 20px;
         background: none;
         display: block;
         z-index: 111111;
-         
+         top: 0;
      }
     
     .nav-bar ul{
@@ -371,13 +371,13 @@ padding-bottom: 20px;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        padding: none;
+        padding: 0;
         
     }
     
     .nav-bar ul li{
         list-style-type: none;
-        padding-top: none;
+        padding-top: 0;
         padding-left: 25px;
 
     }
@@ -406,7 +406,7 @@ padding-bottom: 20px;
     .button{
         background: transparent;
         color: hsl(270, 9%, 17%);
-        margin-top:none ;
+        margin-top:0;
         border-color:hsl(270, 9%, 17%);
         display: block;
         padding: 15px 20px;
@@ -589,8 +589,8 @@ padding-bottom: 20px;
     .header{
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        padding:0 70px;
+        align-items: center;
+        padding:30px 70px;
     }
 
     .nav-bar{
@@ -608,13 +608,13 @@ padding-bottom: 20px;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        padding: none;
+        padding: 0;
         margin-right: -40%;
     }
     
     .nav-bar ul li{
         list-style-type: none;
-        padding-top: none;
+        padding-top: 0;
         padding-left: 20px;
     }
     
@@ -641,7 +641,7 @@ padding-bottom: 20px;
     .button{
         background: transparent;
         color: hsl(270, 9%, 17%);
-        margin-top:none ;
+        margin-top:0;
         border-color:hsl(270, 9%, 17%);
         display: block;
         padding: 15px 20px;
